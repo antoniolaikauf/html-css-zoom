@@ -27,10 +27,12 @@
     z-index: 500;
 }
 
-#speaker>div{
+#speaker>a{
     margin:5px;
     background-color: gray;
     padding: 3px;
+    color: white;
+    text-decoration: none;
 }
 
 
