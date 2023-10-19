@@ -83,7 +83,7 @@
 }
 
 .tendina i{
-    font-size: 10px;
+    font-size: 8px;
 }
 
 /* fine barra comando */
@@ -97,27 +97,28 @@
     margin: 0px 20px;
     padding-top: 50px;
     background-color: black;
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-/* sezione telecamere */
+/* nascondi la scroll bar */
 
-.telecamere{
-    padding: 10px 30px;
-    display: flex;
-    width: 100%;
-    height: calc(100% / 5);
+#contenitore-telecamere::-webkit-scrollbar{
+    display: none;
 }
+
 
 
 /* caratteristiche camera */
 .camera{
-    width: calc(100% / 7 - 20px);
-    margin: 0 10px;
+    margin: 10px;
     position: relative;
     background-image: url(https://picsum.photos/id/237/200/300);
     background-position: center;
     background-size: cover;
-    height: 100%;
+    height: calc(100% / 5 - 20px);
+    width: 150px;
 }
 
 .camera img{
@@ -133,6 +134,4 @@
     color: white;
 }
 
-.sotto-contenitore{
-    height: calc(100% - 70px);
-}
+
