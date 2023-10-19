@@ -19,11 +19,81 @@
     padding: 10px 0;
     position: fixed;
     width: 100%;
+    top: 0px;
     /* debug */
     background-color: red;
-
+    z-index: 500;
 }
 
 #speaker>div{
     margin: 0 5px;
 }
+
+
+/* barra-comando */
+#barra-comando{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* debug */
+    background-color: blue;
+}
+
+/* display items */
+
+.items-sinistra, .items-centro{
+    display: flex;
+}
+
+.items-sinistra>div{
+    display: flex;
+    align-items: center;
+}
+
+/* caratteristiche items destro  */
+.items-destra{
+    background-color: grey;
+    color: red;
+    height: 100%;
+    line-height: 70px;
+    padding: 0 10px;
+}
+
+#contenitore-telecamere{
+    padding-top: 50px;
+    height: calc(100% - 70px);
+    background-color: green;
+    overflow-y: auto;
+}
+
+.telecamere{
+    padding: 10px 30px;
+    display: flex;
+    width: 100%;
+    background-color: blue;
+}
+
+.camera{
+    width: calc(100% / 7 - 20px);
+    margin: 0 10px;
+    position: relative;
+}
+
+.camera img{
+    width: 100%;
+    display: block;
+}
+
+
+.nome-persona{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.278);
+    left: 0px;
+    bottom: 0px;
+    color: white;
+}
+
