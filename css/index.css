@@ -103,6 +103,7 @@
     padding: 10px 30px;
     display: flex;
     width: 100%;
+    height: calc(100% / 5);
 }
 
 
@@ -111,6 +112,10 @@
     width: calc(100% / 7 - 20px);
     margin: 0 10px;
     position: relative;
+    background-image: url(https://picsum.photos/id/237/200/300);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
 }
 
 .camera img{
@@ -120,7 +125,7 @@
 
 .nome-persona{
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.278);
+    background-color: rgba(0, 0, 0, 0.41);
     left: 0px;
     bottom: 0px;
     color: white;
