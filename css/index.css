@@ -8,25 +8,29 @@
 
 #container{
     height: 100vh;
-    /* debug */
-    background-color: aqua;
+    background-color:#120f0fd1;
+    color: white;
 }
+
+/* inizio parte fixed speker */
 
 #speaker{
     display: flex;
     justify-content: end;
     height: 50px;
-    padding: 10px 0;
+    padding: 5px 20px;
     position: fixed;
     width: 100%;
     top: 0px;
-    /* debug */
-    background-color: red;
     z-index: 500;
+    background-color: black;
+    align-items: start;
 }
 
 #speaker>div{
     margin: 0 5px;
+    background-color: gray;
+    padding: 3px;
 }
 
 
@@ -39,14 +43,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* debug */
-    background-color: blue;
+    background-color: #120f0f0d;
 }
 
-/* display items */
+/* display della barra di comando */
+/* caratteristiche items */
 
 .items-sinistra, .items-centro{
     display: flex;
+    text-align: center;
+    align-items: center;
 }
 
 .items-sinistra>div{
@@ -54,7 +60,10 @@
     align-items: center;
 }
 
-/* caratteristiche items destro  */
+.items-centro>div, .items-sinistra>div{
+    margin-right: 10px;
+}
+
 .items-destra{
     background-color: grey;
     color: red;
@@ -63,20 +72,41 @@
     padding: 0 10px;
 }
 
-#contenitore-telecamere{
-    padding-top: 50px;
-    height: calc(100% - 70px);
-    background-color: green;
-    overflow-y: auto;
+.items-sinistra, .items-destra{
+    margin: 0 20px;
 }
+
+#share-screen i{
+    color: green;
+}
+
+.tendina i{
+    font-size: 10px;
+}
+
+/* fine barra comando */
+
+/* inizio telecamere */
+
+#contenitore-telecamere{
+    
+    height: calc(100% - 50px - 20px);
+    overflow-y: auto;
+    margin: 0px 20px;
+    padding-top: 50px;
+    background-color: black;
+}
+
+/* sezione telecamere */
 
 .telecamere{
     padding: 10px 30px;
     display: flex;
     width: 100%;
-    background-color: blue;
 }
 
+
+/* caratteristiche camera */
 .camera{
     width: calc(100% / 7 - 20px);
     margin: 0 10px;
@@ -88,7 +118,6 @@
     display: block;
 }
 
-
 .nome-persona{
     position: absolute;
     background-color: rgba(0, 0, 0, 0.278);
@@ -97,3 +126,6 @@
     color: white;
 }
 
+.sotto-contenitore{
+    height: calc(100% - 70px);
+}
