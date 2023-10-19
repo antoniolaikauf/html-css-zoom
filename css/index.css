@@ -1,0 +1,29 @@
+/* strutture generali */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#container{
+    height: 100vh;
+    /* debug */
+    background-color: aqua;
+}
+
+#speaker{
+    display: flex;
+    justify-content: end;
+    height: 50px;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    /* debug */
+    background-color: red;
+
+}
+
+#speaker>div{
+    margin: 0 5px;
+}
