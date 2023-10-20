@@ -15,16 +15,16 @@
 /* inizio parte fixed speker */
 
 #speaker{
-    width: calc(100% - 40px);
+    /* width: calc(100% - 40px); */
     height: 50px;
     display: flex;
     align-items: start;
     background-color: black;
     justify-content: end;
-    position: fixed;
+    /* position: fixed;
     left: 20px;
     top: 0px;
-    z-index: 500;
+    z-index: 500; */
 }
 
 #speaker>a{
@@ -92,10 +92,10 @@
 
 #contenitore-telecamere{
     
-    height: calc(100% - 50px - 20px);
+    height: calc(100% - 50px - 70px);
     overflow-y: auto;
-    margin: 0px 20px;
-    padding-top: 50px;
+    /* margin: 0px 20px;
+    padding-top: 50px; */
     background-color: black;
     display: flex;  
     flex-wrap: wrap;
@@ -134,4 +134,5 @@
 
 
 /* bisognava mettere l'altezza fissa per funzionare invece della percentuale 
-e mettere l'immagine dentro all'html */
+e mettere l'immagine dentro all'html le correzioni commentate non bisognava dare 
+fixed al speaker */
