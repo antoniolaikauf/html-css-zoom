@@ -115,7 +115,7 @@
     background-image: url(https://picsum.photos/id/237/200/300);
     background-position: center;
     background-size: cover;
-    height: calc(100% / 5 - 20px);
+    height: 170px;
     width: 150px;
 }
 
@@ -133,3 +133,5 @@
 }
 
 
+/* bisognava mettere l'altezza fissa per funzionare invece della percentuale 
+e mettere l'immagine dentro all'html */
